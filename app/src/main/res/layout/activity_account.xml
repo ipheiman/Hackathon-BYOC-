@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B47676"
+    android:backgroundTint="#00795C5C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/StartDateHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Account"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="216dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/ic_alien" />
+
+    <TextView
+        android:id="@+id/userdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Jessica Sarah Lim | @jasiksiksiksika" />
+    <TextView
+        android:id="@+id/totalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:alpha="50"
+        android:text="430 pts"
+        android:layout_below="@+id/userdetails"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:layout_centerHorizontal="true"/>
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="308dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="0dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="80"
+        android:progressTint="#FFC107"
+        android:layout_below="@+id/totalPoints"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/progressBar3"
+        android:text="70pts more before reaching the next level!"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
